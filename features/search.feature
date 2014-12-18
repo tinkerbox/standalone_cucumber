@@ -1,9 +1,7 @@
-Feature: Search
-  In order to find pages on the web
-  As an information seeker
-  I want to be able to search using keywords
+Feature: Find the YCH Website
 
-  Scenario: Search for cucumber
-    Given I am on the home page
-    And I have entered "cucumber bdd" into the "q" field
-    Then I should see "Cucumber - Making BDD fun"
+  Scenario: Search for the website
+    Given I am on the Google homepage
+    Then I will search for "ych.com"
+    Then I should see "YCH"
+    Then I will click the about link
