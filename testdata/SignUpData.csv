@@ -1,0 +1,1 @@
+test050101,.//*[@id='user_login'],Test050101@123.com1,.//*[@id='user_email'],TEST050501,.//*[@id='user_password'],Cwms123456,.//*[@id='user_password_confirmation'],signup_button,.//*[@id='site-container']/div/div[1]/h1

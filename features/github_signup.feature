@@ -10,7 +10,7 @@ Feature: Testing for signup page
     Then I should see "Welcome to GitHub" in label "<welcome_msg_field>"
   Examples:
     |username|username_field        | email          |email_field |password|password_field|conf_pass|confpass_field|ok_field|welcome_msg_field|
-    |cwms15   |.//*[@id='user_login']|cwmsy3@gmail.com15|.//*[@id='user_email']|Cwms123456|.//*[@id='user_password']|Cwms123456|.//*[@id='user_password_confirmation']|signup_button|.//*[@id='site-container']/div/div[1]/h1|
+    |file:testdata/SignUpData.csv|.//*[@id='user_login']|cwmsy117@gmail.com117|.//*[@id='user_email']|Cwms123456|.//*[@id='user_password']|Cwms123456|.//*[@id='user_password_confirmation']|signup_button|.//*[@id='site-container']/div/div[1]/h1|
 ##  Scenario Outline:  unsuccessful sign upfield
 ##    Given I'm on "https://github.com/join" page
 ##    When I type "<username>" in the "<username_field>" input

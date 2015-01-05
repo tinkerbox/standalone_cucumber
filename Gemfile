@@ -6,5 +6,9 @@ group(:test) do
   gem 'rspec', '>= 3.0.0'
   gem 'selenium-webdriver'
   gem 'faker'
-  gem 'chromedriver-helper'
-end
+   gem 'chromedriver-helper'
+  gem 'ruby-jmeter'
+  gem 'activesupport'
+  gem 'turnip'
+  gem 'acceptance_test'
+  end
