@@ -1,5 +1,8 @@
 require 'rubygems'
 require 'selenium-webdriver'
+require 'acceptance_test'
+require 'acceptance_test/gherkin_ext'
+require 'csv'
 
 module Common_functions
 
@@ -24,3 +27,11 @@ module Common_functions
   end
 
 end
+
+data_reader = lambda do |source_path|
+  CSV.read(File.expand_path(source_path))
+end
+
+GherkinExt.enable_external_source data_reader
+
+

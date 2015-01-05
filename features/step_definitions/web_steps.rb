@@ -6,7 +6,7 @@ Then(/^I will search for "(.*?)"$/) do |searchText|
   fill_in 'gbqfq', with: searchText
 end
 
-Then(/^I should see "(.*?)" in label "(.*?)"$/) do |expectedText, fields|
+Then(/^I should see "(.*?)" in label "(.*?)"$/) do |expectedText, field|
   page.should have_content(expectedText)
 end
 

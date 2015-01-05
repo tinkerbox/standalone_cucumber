@@ -1,6 +1,8 @@
 require 'capybara'
 require 'capybara/cucumber'
 require 'faker'
+
+
 #####################
 # running the test in Chrome browser
 # Capybara.register_driver :selenium do |app|
@@ -14,10 +16,10 @@ require 'faker'
 # Capybara.javascript_driver = :chrome
 
 #####################################
-
-Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, :browser => :internet_explorer)
-end
+#
+# Capybara.register_driver :selenium do |app|
+#   Capybara::Selenium::Driver.new(app, :browser => :internet_explorer)
+# end
 
 
 Capybara.configure do |config|
@@ -25,5 +27,6 @@ Capybara.configure do |config|
   config.app_host   = 'https://github.com/join'
 end
 World(Capybara)
+
 
 
